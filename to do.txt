@@ -1,0 +1,9 @@
+- setup filters using filter property
+
+- setup predetermined memes, and input text functionality
+
+- polish interface and display
+
+- credit sources, and create open source license
+
+*if time* try and setup download option

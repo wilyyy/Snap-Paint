@@ -1,0 +1,65 @@
+<!DOCTYPE	 html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Will and Dave's SnapPaint</title>
+    <link rel="stylesheet" type="text/css" href="main.css" media="all">
+    <script src="mycanvas.js">
+    </script>
+</head>
+
+<body>
+
+    <div id="SnapPaintApp">
+
+        <div class="top-bar">
+            <img src="snappaint_logo.png" alt="SnapPaint Logo">
+        </div>
+
+        <div class="contentarea">
+
+            <div class="camera">
+                <video id="video">Video stream not available.</video>
+                <!-- video element to capture the stream from WebRTC -->
+                <button id="startbutton">Snap photo</button>
+                <!-- a button for our user to click, in order to capture a video frame -->
+            </div>
+
+            <canvas id="canvas">   <!-- a hidden canvas to store our captured frames, before converting to an image file for output -->
+	</canvas>
+
+            <div class="output">
+                <!-- an img element for us to draw our displayed image -->
+                <img id="photo" alt="Your snapshot">
+            </div>
+        </div>
+
+
+
+        <div class="memes">
+            <img src="memeheader.png" alt="Meme">
+            <textarea rows="8" cols="20" id="drawtext">
+Meme line 1
+Meme line 2   
+	
+	
+	
+	
+Meme line 3
+Meme line 4
+    </textarea>
+            <button id="applytext">Apply Meme</button>
+        </div>
+
+        <a id="download">Download as image</a>
+        <!-- can use an image file instead of this link -->
+
+
+
+
+    </div>
+
+</body>
+
+</html>
